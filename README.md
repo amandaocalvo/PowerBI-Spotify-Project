@@ -10,6 +10,7 @@ The objective of this report is to detail the process of cleaning and analyzing 
 To select only songs in the “pop” genre, I opened the Power Query Editor, selected the Genres Column, and applied a Text Filter using the "Contains" feature, then in the pop-up window, I typed pop and pressed OK. After removing blank and duplicating rows by the "Track URI” column, I got 5,546 distinct and unique tracks. So there are 5,546 songs in the 'pop’ genre.
 
 Figure 1: Total Songs in The Pop Genre
+
 ![Dashboard Screenshot](./Spotify1.png)
  
 
@@ -22,6 +23,7 @@ After getting a date for all records, I added a new column for the release decad
 The 2020s has the highest average popularity, and the most popular song, with 98% of popularity is from this same decade.
 
 Figure 2: Average Popularity by Release Decade
+
 ![Dashboard Screenshot](./Spotify2.png) 
 
 
@@ -30,6 +32,7 @@ Figure 2: Average Popularity by Release Decade
 To get the single artist with more than 3 songs listed, I took the artist column and split the artists using the comma delimiter when more than one is listed and I only worked with the column with the first artist listed. I built a table with the grouped artists to count how many times that artist appears in the column, and created a conditional column to highlight only those who have more than 3 records to be able to filter it later easily when I build the table on the dashboard. Working with a merged table with the grouping of artists and using a filter to work with artists that have more than 3 songs, it is possible to see that MEDUZA has the highest average popularity.
 
 Figure 3: Average Popularity by Artist With More than 3 Records
+
 ![Dashboard Screenshot](./Spotify3.png)
  
 
@@ -39,6 +42,7 @@ The column “Instrumentalness” consists of values that range between 0 and 0.
 The average song duration for non-instrumental songs is 217.91 seconds, for moderately instrumental is 228.47 and for highly instrumental songs is 233.77 seconds. There is not a huge difference between those values, especially considering the big standard deviation, but it is possible to see that highly instrumental tend to last a little longer than non-instrumental songs. 
 
 Figure 4: Average Track Duration by Instrumental Level
+
 ![Dashboard Screenshot](./Spotify4.png)
  
 
